@@ -3,6 +3,12 @@
 #include <algorithm>
 using namespace std;
 
+/*
+* remove_duplicates function
+* parameters: two vectors of ints
+* modifies: removes duplicates from first vector and adds the removed duplicates to the second vector
+* returns: original vector with all duplicates removed
+*/
 vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
     vector<int> unique_arr;
     sort(arr.begin(), arr.end());
@@ -17,6 +23,7 @@ vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
     }
     return unique_arr;
 }
+
 
 int main(){
     // Test the function
